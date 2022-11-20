@@ -12,13 +12,12 @@ async function handleSubmit(event) {
 		}
 	}).then(response => {
 		if (response.ok) {
-			$status.classList.toggle("alert alert-success");
+			$status.classList.toggle("alert-success");
 			$status.innerHTML = "Gracias por contactar conmigo!";
 			$form.reset()
 		} else {
 			response.json().then(data => {
 				if (Object.hasOwn(data, 'errors')) {
-					$status.classList.toggle("alert alert-warning");
 					$status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
 				} else {
 					$status.classList.toggle("alert alert-warning");
