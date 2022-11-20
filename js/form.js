@@ -1,50 +1,30 @@
-$(function() {
-
-	// Get the form.
-	var form = $('#ajax-contact');
-
-	// Get the messages div.
-	var formMessages = $('#form-messages');
-	var formMessagesError = $('#form-messages-error');
-
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
-
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('bg-danger');
-			$(formMessages).addClass('bg-success');
-
-			// Set the message text.
-			$(formMessages).text('Your message successfully sent');
-
-			// Clear the form.
-			$('#name, #email, #message').val('');			
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessagesError).removeClass('bg-success');
-			$(formMessagesError).addClass('bg-danger');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
-
+let form = document.getElementById("contact");
+    
+async function handleSubmit(event) {
+	event.preventDefault();
+	let status = document.getElementById("status");
+	let data = new FormData(event.target);
+	fetch(event.target.action, {
+		method: form.method,
+		body: data,
+		headers: {
+				'Accept': 'application/json'
+		}
+	}).then(response => {
+		if (response.ok) {
+			status.innerHTML = "Thanks for your submission!";
+			form.reset()
+		} else {
+			response.json().then(data => {
+				if (Object.hasOwn(data, 'errors')) {
+					status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+				} else {
+					status.innerHTML = "Oops! There was a problem submitting your form"
+				}
+			})
+		}
+	}).catch(error => {
+		status.innerHTML = "Oops! There was a problem submitting your form"
 	});
-
-});
+}
+form.addEventListener("submit", handleSubmit)
