@@ -5,6 +5,7 @@ $(function() {
 
 	// Get the messages div.
 	var formMessages = $('#form-messages');
+	var formMessagesError = $('#form-messages-error');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -33,8 +34,8 @@ $(function() {
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('bg-success');
-			$(formMessages).addClass('bg-danger');
+			$(formMessagesError).removeClass('bg-success');
+			$(formMessagesError).addClass('bg-danger');
 
 			// Set the message text.
 			if (data.responseText !== '') {
