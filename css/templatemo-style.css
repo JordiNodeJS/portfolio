@@ -989,7 +989,10 @@ textarea.form-control {
 }
 
 .filled-bar,
+.filled-bar-95,
 .filled-bar-90,
+.filled-bar-80,
+.filled-bar-70,
 .filled-bar-60,
 .filled-bar-50,
 .filled-bar-40,
@@ -1001,10 +1004,18 @@ textarea.form-control {
   border-radius: 3px;
 }
 
+.filled-bar-95 {
+  width: 95%;
+}
 .filled-bar-90 {
   width: 90%;
 }
-
+.filled-bar-80 {
+  width: 80%;
+}
+.filled-bar-70 {
+  width: 70%;
+}
 .filled-bar-60 {
   width: 60%;
 }
@@ -1012,11 +1023,9 @@ textarea.form-control {
 .filled-bar-50 {
   width: 50%;
 }
-
 .filled-bar-40 {
   width: 40%;
 }
-
 .filled-bar-30 {
   width: 30%;
 }
