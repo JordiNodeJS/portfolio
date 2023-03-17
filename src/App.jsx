@@ -1,12 +1,9 @@
-import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <h1 className="text-lg text-secondary font-extrabold">Hola mundo</h1>
-      {/* ul>li*20>{$ 😂} */}
-
-      
+      <Home />
     </div>
   );
 }
