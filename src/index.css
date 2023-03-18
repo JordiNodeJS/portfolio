@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     /* background-color: #303030; */
     /* background-image: url("./background.svg"); */
     background-repeat: repeat;
@@ -12,15 +12,36 @@
     background-size: cover;
 
     height: 100vh;
+
+    /* SCROLLBAR BODY --------------- */
+    --sb-track-color: #3e2332;
+    --sb-thumb-color: #ff79c6;
+    --sb-size: 10px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
   }
 }
 
 @layer componets {
   .background {
-    background-image: url("./background.svg");
+    background-image: url('./background.svg');
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    }
+  }
 }
