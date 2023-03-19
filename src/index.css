@@ -6,12 +6,10 @@
   body {
     font-family: 'Poppins', sans-serif;
     /* background-color: #303030; */
-    /* background-image: url("./background.svg"); */
+    /* background-image: url('./background.svg');
     background-repeat: repeat;
     background-position: center;
-    background-size: cover;
-
-    height: 100vh;
+    background-size: cover; */
 
     /* SCROLLBAR BODY --------------- */
     --sb-track-color: #3e2332;
@@ -42,6 +40,11 @@
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+
+  }
+}
+@layer utilities {
+  .height-min {
+    height: calc(100vh - 64px);
   }
 }

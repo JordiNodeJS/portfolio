@@ -1,12 +1,12 @@
 export default function Home() {
   return (
     <div
-      className="hero min-h-screen"
+      className="hero height-min"
       style={{
         backgroundImage: 'url("azamat.jpg")'
       }}
     >
-      <div className="hero-overlay bg-opacity-60 background"></div>
+      <div className="hero-overlay bg-opacity-90 background"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
           <h2 className="">FrontEnd React Developer</h2>
