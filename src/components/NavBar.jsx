@@ -33,7 +33,7 @@ export default function NavBar() {
         <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
       </div>
       <div className="flex-none hidden md:block">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal bg-base-100 rounded-box">
           <NavLinks />
         </ul>
       </div>

@@ -1,8 +1,30 @@
 {
-    "presentation":{
-        "name": "JORGe's web",
-        "title": "FrontEnd React Developer",
-        "description": " + 2 years of experience in the programming world, specializing in React. Committed to developing accessible and high-performance user experiences."
+  "presentation": {
+    "name": "JORGe's web",
+    "title": "FrontEnd React Developer",
+    "description": "+ 2 years of experience in the programming world, specializing in React. Committed to developing accessible and high-performance user experiences."
+  },
+  "projects": [
+    {
+      "title": "Generador de placeholder para imágenes",
+      "description": "",
+      "tags": ["javascript", "react", "tailwindcss", "cloudinary", "vite"]
     },
-    "experience": ""
+    {
+      "title": "App sobre el tiempo",
+      "description": "La finalidad de esta app era la construcción de un interface entre el cliente y una API de terceros.",
+      "tags": ["html", "javascript", "css", "api"]
+    },
+    {
+      "title": "Adivina",
+      "description": "Juego básico creado en javascript cuyo objetivo de aprendizaje era la manipulación del DOM del documento HTML para presentar los resultados",
+      "tags": ["html", "javascript", "bootstrap"]
+    },
+    {
+      "title": "Image-Slideshow-Effect Only JS",
+      "description": "Un botón de muestra de un slider automático",
+      "tags": ["html", "javascript", "css"]
+    }
+  ],
+  "experience": ""
 }
