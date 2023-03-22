@@ -1,1 +1,2 @@
-export { default as NavBar } from './nav-bar'
+export { default as NavBar } from './NavBar'
+export { default as NavLinks } from './NavLinks'
