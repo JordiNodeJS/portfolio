@@ -5,28 +5,36 @@
     "description": "+ 2 years of experience in the programming world, specializing in React. Committed to developing accessible and high-performance user experiences."
   },
   "projects": [
-    { 
-        "id": "project_1",
+    {
+      "id": "project_1",
       "title": "Generador de placeholder para imágenes",
-      "description": "",
+      "imgCover": "img-project/generatelow.png",
+      "description": "La App consiste en que te genera una imagen de muy baja resolución, respetando el contorno de la imagen original, con el propósito de utilizarse como placeholder o sustituto temporal.",
+      "link": "https://github.com/JordiNodeJS/generate-low-placeholder",
       "tags": ["javascript", "react", "tailwindcss", "cloudinary", "vite"]
     },
-    { 
-        "id": "project_2",
+    {
+      "id": "project_2",
       "title": "App sobre el tiempo",
+      "imgCover": "img-project/weather.png",
       "description": "La finalidad de esta app era la construcción de un interface entre el cliente y una API de terceros.",
+      "link": "https://github.com/JordiNodeJS/weather-app",
       "tags": ["html", "javascript", "css", "api"]
     },
-    { 
-        "id": "project_3",
+    {
+      "id": "project_3",
       "title": "Adivina",
+      "imgCover": "img-project/game.png",
       "description": "Juego básico creado en javascript cuyo objetivo de aprendizaje era la manipulación del DOM del documento HTML para presentar los resultados",
+      "link": "https://github.com/JordiNodeJS/AdivinaPro",
       "tags": ["html", "javascript", "bootstrap"]
     },
-    { 
-        "id": "project_4",
+    {
+      "id": "project_4",
       "title": "Image-Slideshow-Effect Only JS",
+      "imgCover": "img-project/slider.png",
       "description": "Un botón de muestra de un slider automático",
+      "link": "https://jordinodejs.github.io/Image-Slideshow-Effect-OnlyJS/",
       "tags": ["html", "javascript", "css"]
     }
   ],
