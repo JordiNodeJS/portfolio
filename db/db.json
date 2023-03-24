@@ -38,5 +38,45 @@
       "tags": ["html", "javascript", "css"]
     }
   ],
+  "education": [
+    {
+      "id": "edu5cc7",
+      "center": "BootCamp  IT Academy",
+      "title": "Front-End React Developer",
+      "description": "Front-End React Developer en Bootcamp IT Academy: Un programa de 18 semanas en el que se enseñaron habilidades como la maquetación en HTML, CSS, SASS, JavaScript, ReactJS, entre otras. Además, se utilizaron diferentes herramientas como Vite y Create React App, y se trabajó con librerías como Bootstrap, Mantine y MUI. Se llevó a cabo un proyecto que implicó el uso de GitHub, Typescript, Node, entre otros. También se aprendió a desplegar en diferentes plataformas, como GitHub Pages, Vercel, Netlify, Render.com y Fly.io.",
+      "start_date": "01/09/2015",
+      "end_date": "30/06/2019"
+    },
+    {
+      "id": "edu7fcc",
+      "center": "Center CIFO La Violeta",
+      "title": "Web applications development Full Stack",
+      "description": "Desarrollo de aplicaciones web Full Stack en CIFO La Violeta: Este curso de 600 horas permitió al estudiante adquirir competencias en programación web en el entorno cliente y servidor, así como la elaboración de documentos web mediante lenguajes de marca. También se enseñó sobre usabilidad y accesibilidad en el entorno cliente, acceso a datos en aplicaciones web del entorno servidor y la implantación de aplicaciones web en entornos de internet, intranet y extranet. Se trabajó con diferentes herramientas de despliegue, como Heroku, Vercel, Netlify y GitHub Pages.",
+      "start_date": "01/09/2018",
+      "end_date": "30/06/2019"
+    },
+    {
+      "id": "edu5ucc",
+      "center": "SINENSIA IT SOLUTIONS.",
+      "title": "Web applications development ANGULAR",
+      "description": "Desarrollo de aplicaciones web con Angular en SINENSIA IT SOLUTIONS: Un curso de 60 horas en el que se enseñó a desarrollar aplicaciones web utilizando Angular.",
+      "start_date": "01/09/2018",
+      "end_date": "30/06/2019"
+    }
+  ],
+  "habilidades": [
+    {
+      "nombre": "React JS",
+      "nivel": "avanzado"
+    },
+    {
+      "nombre": "Python",
+      "nivel": "intermedio"
+    },
+    {
+      "nombre": "Inglés",
+      "nivel": "B2"
+    }
+  ],
   "experience": ""
 }
