@@ -6,15 +6,39 @@
   },
   "projects": [
     {
-      "id": "project_1",
-      "title": "Generador de placeholder para imágenes",
+      "id": "9b681b4d",
+      "title": "IT Academy_directory",
       "imgCover": "img-project/generatelow.png",
-      "description": "La App consiste en que te genera una imagen de muy baja resolución, respetando el contorno de la imagen original, con el propósito de utilizarse como placeholder o sustituto temporal.",
+      "description": "Working under agile methodologies such as SCRUM, fixing bugs, testing, new functionalities, documentation in conjunction with backend.",
+      "link": "https://github.com/IT-Academy-BCN/ita-directory",
+      "tags": ["javascript", "react", "tailwindcss", "vite", "Redux Toolkit", "Vitest/Jest", "React Testing Library", "Styled Components", "UseForms"]
+    },
+    {
+      "id": "9b68cc3d",
+      "title": "Ita-Game",
+      "imgCover": "img-project/generatelow.png",
+      "description": "Gamification of a study platform using React and Tailwind.",
+      "link": "https://github.com/IT-Academy-BCN/ita-game",
+      "tags": ["javascript", "react", "tailwindcss", "vite"]
+    },
+    {
+      "id": "9b68aa3d",
+      "title": "Placeholder generator for images",
+      "imgCover": "img-project/generatelow.png",
+      "description": "The App consists of generating a very low resolution image, respecting the outline of the original image, with the purpose of being used as a placeholder or temporary substitute.",
       "link": "https://github.com/JordiNodeJS/generate-low-placeholder",
       "tags": ["javascript", "react", "tailwindcss", "cloudinary", "vite"]
     },
     {
-      "id": "project_2",
+      "id": "9b68qa3d",
+      "title": "King-league-project",
+      "imgCover": "img-project/generatelow.png",
+      "description": "Open source project, where I collaborate a bit, fixing fix some bugs, docu, github actions.",
+      "link": "https://github.com/JordiNodeJS/generate-low-placeholder",
+      "tags": ["javascript", "react", "tailwindcss", "git actions", "vite"]
+    },
+    {
+      "id": "d4613430",
       "title": "App sobre el tiempo",
       "imgCover": "img-project/weather.png",
       "description": "La finalidad de esta app era la construcción de un interface entre el cliente y una API de terceros.",
@@ -22,20 +46,28 @@
       "tags": ["html", "javascript", "css", "api"]
     },
     {
-      "id": "project_3",
+      "id": "781d5bab",
       "title": "Adivina",
       "imgCover": "img-project/game.png",
-      "description": "Juego básico creado en javascript cuyo objetivo de aprendizaje era la manipulación del DOM del documento HTML para presentar los resultados",
+      "description": "Basic game created in javascript whose learning objective was the manipulation of the DOM of the HTML document to present the results.",
       "link": "https://github.com/JordiNodeJS/AdivinaPro",
       "tags": ["html", "javascript", "bootstrap"]
     },
     {
-      "id": "project_4",
+      "id": "a3203cfa",
       "title": "Image Slideshow Effect Only JS",
       "imgCover": "img-project/slider.png",
       "description": "Un botón de muestra de un slider automático",
       "link": "https://jordinodejs.github.io/Image-Slideshow-Effect-OnlyJS/",
       "tags": ["html", "javascript", "css"]
+    },
+    {
+      "id": "a3203tra",
+      "title": "FreeForEver",
+      "imgCover": "img-project/slider.png",
+      "description": "UX/UI and functionalities to architecture.",
+      "link": "https://github.com/JordiNodeJS/freeforever",
+      "tags": ["html", "javascript", "css", "React", "tailwind", "Firebase", "Firestore"]
     }
   ],
   "education": [

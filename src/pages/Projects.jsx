@@ -16,7 +16,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 
-import db from '../../db/db.json'
+import db from '../../public/db/db.json'
 import Article from '../components/Article'
 const { projects } = db
 
@@ -33,7 +33,7 @@ export default function Projects() {
         keyboard={{
           enabled: true
         }}
-        scrollbar={true}
+        scrollbar={false}
         navigation={false}
         pagination={{
           clickable: true
@@ -43,7 +43,7 @@ export default function Projects() {
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true
+          slideShadows: false
         }}
         modules={[Keyboard, Scrollbar, Navigation, Pagination, EffectCoverflow]}
       >

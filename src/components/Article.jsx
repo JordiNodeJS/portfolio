@@ -11,14 +11,14 @@ const Image = ({ project, ...rest }) =>
 export default function Article({ project, className, ...rest }) {
   return (
     <article
-      className={`${className} flex flex-col items-center rounded-3xl pb-12`}
+      className={`${className} flex flex-col items-center rounded-3xl pb-12 bg-secondary-focus bg-opacity-40`}
       {...rest}
     >
       <div className="w-48 h-48 object-cover">
         <Image project={project} className="rounded-t-lg" />
       </div>
-      <div className="p-4">
-        <h2 className="font-bold text-slate-300 text-3xl mb-4">
+      <div className="p-4 text-slate-400">
+        <h2 className="font-bold text-slate-200 text-3xl mb-4">
           {project.title}
         </h2>
         <p className="mb-4">{project.description}</p>
@@ -38,11 +38,13 @@ export default function Article({ project, className, ...rest }) {
             give it a star
           </a>
         </p>
-        {project.tags?.map((tag) => (
-          <div key={project.id + tag} className="badge badge-info gap-2 mr-2">
-            {tag}
-          </div>
-        ))}
+        <div className="mt-4">
+          {project.tags?.map((tag) => (
+            <span key={project.id + tag} className="badge badge-info gap-2 mr-2">
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </article>
   )
