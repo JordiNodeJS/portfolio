@@ -2,7 +2,7 @@ import NavLinks from './NavLinks'
 
 export default function NavBar() {
   return (
-    <div className="navbar hero-overlay">
+    <div className="sticky top-0 navbar backdrop-blur-sm bg-neutral-800 bg-opacity-40 z-10">
       <div className="flex-1">
         <div className="navbar-start md:hidden">
           <div className="dropdown">
@@ -24,13 +24,12 @@ export default function NavBar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 backdrop-blur-sm bg-neutral-800 bg-opacity-40 "
             >
               <NavLinks />
             </ul>
           </div>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
       </div>
       <div className="flex-none hidden md:block">
         <ul className="menu menu-horizontal bg-base-100 rounded-box">

@@ -11,7 +11,7 @@ const Image = ({ project, ...rest }) =>
 export default function Article({ project, className, ...rest }) {
   return (
     <article
-      className={`${className} flex flex-col items-center rounded-3xl pb-12 bg-secondary-focus bg-opacity-40`}
+      className={`${className} flex flex-col items-center rounded-3xl pb-12 bg-primary-focus bg-opacity-30`}
       {...rest}
     >
       <div className="w-48 h-48 object-cover">

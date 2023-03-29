@@ -7,7 +7,7 @@
   "projects": [
     {
       "id": "9b681b4d",
-      "title": "IT Academy_directory",
+      "title": "IT Academy directory",
       "imgCover": "img-project/generatelow.png",
       "description": "Working under agile methodologies such as SCRUM, fixing bugs, testing, new functionalities, documentation in conjunction with backend.",
       "link": "https://github.com/IT-Academy-BCN/ita-directory",
@@ -89,7 +89,7 @@
     },
     {
       "id": "edu5ucc",
-      "center": "SINENSIA IT SOLUTIONS.",
+      "center": "SINENSIA IT SOLUTIONS",
       "title": "Web applications development ANGULAR",
       "description": "Desarrollo de aplicaciones web con Angular en SINENSIA IT SOLUTIONS: Un curso de 60 horas en el que se enseñó a desarrollar aplicaciones web utilizando Angular.",
       "start_date": "01/09/2018",

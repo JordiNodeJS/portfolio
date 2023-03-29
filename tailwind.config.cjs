@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {}
   },
-  plugins: [require('daisyui')],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
     themes: [
-      'pastel',
-      'dark',
+      // 'pastel',
+      // 'dark',
       {
         porfolio: {
           primary: '#FF79C6',

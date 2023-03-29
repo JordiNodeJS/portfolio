@@ -34,18 +34,22 @@
 }
 
 @layer componets {
-  .background {
+  .background-svg {
     background-image: url('./background.svg');
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 }
 @layer utilities {
   .height-min {
     height: calc(100vh - 64px);
   }
-  .swiper {
+  /* .swiper {
     width: 100%;
     height: 100%;
   }
@@ -56,7 +60,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+  } */
 
   /* ************timeline *************** */
   /* The actual timeline (the vertical ruler) */
@@ -146,10 +150,11 @@
 
   /* The actual content */
   .content {
-    padding: 1rem;
-    background-color: rgba(75, 54, 109, 0.397);
     position: relative;
-    border-radius: 6px;
+    padding: 1rem;
+    padding-bottom: 1px;
+    background-color: rgba(75, 54, 109, 0.397);
+    border-radius: 12px;
   }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */

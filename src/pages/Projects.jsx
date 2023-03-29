@@ -16,14 +16,14 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 
-import db from '../../public/db/db.json'
+import db from '../../src/db/db.json'
 import Article from '../components/Article'
 const { projects } = db
 
 export default function Projects() {
   return (
     <Container>
-      <h1 className="mb-5 text-4xl font-bold">Projects</h1>
+      <h1 className="mt-8 mb-5 text-4xl font-bold">Projects</h1>
       <Swiper
         effect={'coverflow'}
         slidesPerView={'auto'}
@@ -49,8 +49,11 @@ export default function Projects() {
       >
         <section className="text-left">
           {projects.map((project, index) => (
-            <SwiperSlide key={project.id} tabIndex={index}>
-              <Article project={project} />
+            <SwiperSlide key={project.id} tabIndex={index} className="p-4 px-4 md:px-16 lg:px-16 xl:px-[20rem]">
+              <Article
+                className="transition-transform border-pink-400 border border-opacity-60 ease-linear hover:scale-105"
+                project={project}
+              />
             </SwiperSlide>
           ))}
         </section>
