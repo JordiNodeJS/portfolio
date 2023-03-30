@@ -15,7 +15,7 @@ export default function Article({ project, className, ...rest }) {
       {...rest}
     >
       <div className="w-48 h-48 object-cover">
-        <Image project={project} className="rounded-t-lg" />
+        <Image project={project} className="rounded-t-lg mt-6" />
       </div>
       <div className="p-4 text-slate-400">
         <h2 className="font-bold text-slate-200 text-3xl mb-4">
