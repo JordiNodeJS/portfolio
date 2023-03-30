@@ -1,12 +1,21 @@
 import { useParams } from 'react-router-dom'
-import Card from '../components/Card'
+import ContactForm from '../components/ContactForm'
+import Container from '../layouts/Container'
+
 export default function Contact() {
   const { contactId } = useParams()
 
   return (
-    <div>
-      <h1>Contact {contactId}</h1>
-      <Card />
-    </div>
+    <Container>
+      <div className="flex flex-col justify-center items-center">
+        <div className="w-4/5 md:max-w-lg">
+          <h1 className="mt-5 text-4xl text-slate-200 font-bold">
+            Contact {contactId}
+          </h1>
+
+          <ContactForm />
+        </div>
+      </div>
+    </Container>
   )
 }

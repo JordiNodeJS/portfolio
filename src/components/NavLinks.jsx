@@ -13,7 +13,7 @@ export default function NavLinks() {
         <NavLink to="/education">Education</NavLink>
       </li>
       <li>
-        <NavLink to="/contact/1">Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
     </>
   )

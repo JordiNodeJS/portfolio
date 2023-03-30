@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <Education />
       },
       {
-        path: '/contact/:contactId',
+        path: '/contact',
         element: <Contact />
       }
     ]
